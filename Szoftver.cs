@@ -17,6 +17,7 @@ namespace Szoftverek
         public double NettoAr { get; init; }
         public int Adokukcs { get; init; }
 
+        public double Brutto => NettoAr + (NettoAr * (Adokukcs / 100));
         public Szoftver(string sor)
         {
             string[] s = sor.Split('|');
